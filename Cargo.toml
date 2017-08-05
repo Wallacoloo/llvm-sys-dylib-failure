@@ -1,0 +1,14 @@
+[package]
+name = "llvm-so"
+version = "0.1.0"
+authors = ["Colin Wallace <wallacoloo@gmail.com>"]
+
+[dependencies]
+llvm-sys = "40.0"
+libloading = "0.4"
+
+[lib]
+crate-type = ["dylib"]
+
+[[bin]]
+name = "load"
